@@ -4,12 +4,11 @@ import br.gov.sc.pm.emergencia.gtlock.operadoras.controller.dto.OperadorasDTO;
 import br.gov.sc.pm.emergencia.gtlock.operadoras.model.Operadoras;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 @Mapper(componentModel = "spring")
 public interface OperadorasMapper {
 
-    Operadoras toEntity(OperadorasDTO dto);
+    Operadoras toEntity(OperadorasDTO dto);ß
 
     @InheritInverseConfiguration
     OperadorasDTO toDTO(Operadoras model);
