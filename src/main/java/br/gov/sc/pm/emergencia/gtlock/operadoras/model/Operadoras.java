@@ -1,9 +1,6 @@
 package br.gov.sc.pm.emergencia.gtlock.operadoras.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
@@ -11,6 +8,10 @@ import lombok.Data;
 @Table(name = "operadoras")
 public class Operadoras {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+//    @Column(name = "operadora")
+//    private Integer operadora;
     @Id
     @Column(name = "id")
     private Long id;

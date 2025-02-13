@@ -9,8 +9,6 @@ import org.mapstruct.factory.Mappers;
 @Mapper(componentModel = "spring")
 public interface OperadorasMapper {
 
-    OperadorasMapper INSTANCE = Mappers.getMapper(OperadorasMapper.class);
-
     Operadoras toEntity(OperadorasDTO dto);
 
     @InheritInverseConfiguration
