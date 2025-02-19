@@ -34,11 +34,11 @@ public class OperadorasController {
             Operadoras operadoras = operadorasMapper.toEntity(dto);
             operadorasService.salvar(operadoras);
 
-//            URI location = ServletUriComponentsBuilder
-//                    .fromCurrentRequest()
-//                    .path("{/{id}")
-//                    .buildAndExpand(operadoras.getId())
-//                    .toUri();
+            URI location = ServletUriComponentsBuilder
+                    .fromCurrentRequest()
+                    .path("{/{id}")
+                    .buildAndExpand(operadoras.getId())
+                    .toUri();
             return ResponseEntity.ok().build();
 
         } catch (Exception e) {

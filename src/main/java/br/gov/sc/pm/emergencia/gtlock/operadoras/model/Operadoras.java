@@ -8,11 +8,11 @@ import lombok.Data;
 @Table(name = "operadoras")
 public class Operadoras {
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-//    @Column(name = "operadora")
-//    private Integer operadora;
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "operadora")
+    private Integer operadora;
+
     @Column(name = "id")
     private Long id;
 
@@ -21,6 +21,6 @@ public class Operadoras {
 
     @Override
     public String toString() {
-        return "Operadoras [id=" + id + ", descricao=" + descricao + "]";
+        return "Operadoras [id=" + id + ", descricao=" + descricao + "operadora=" +operadora+ "]";
     }
 }
