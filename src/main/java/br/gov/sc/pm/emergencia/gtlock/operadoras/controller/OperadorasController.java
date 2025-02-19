@@ -8,7 +8,6 @@ import br.gov.sc.pm.emergencia.gtlock.operadoras.controller.mapper.OperadorasMap
 import br.gov.sc.pm.emergencia.gtlock.operadoras.model.Operadoras;
 import br.gov.sc.pm.emergencia.gtlock.operadoras.service.OperadorasService;
 import lombok.RequiredArgsConstructor;
-import org.mapstruct.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
