@@ -16,11 +16,11 @@ public class Operadoras {
     @Column(name = "id")
     private Long id;
 
-    @Column(name = "descricao" , nullable = false)
+    @Column(name = "descricao", nullable = false)
     private String descricao;
 
     @Override
     public String toString() {
-        return "Operadoras [id=" + id + ", descricao=" + descricao + "operadora=" +operadora+ "]";
+        return "Operadoras [id=" + id + ", descricao=" + descricao + ", operadora=" + operadora + "]";
     }
 }

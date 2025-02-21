@@ -29,7 +29,7 @@ public class OperadorasService {
     }
 
     //Deletar por id
-    public  Optional<Operadoras> deletarById(Long id) {
+    public Optional<Operadoras> deletarById(Long id) {
         Optional<Operadoras> op = operadorasRepository.findById(id);
         op.ifPresent(operadorasRepository::delete);
         return op;
