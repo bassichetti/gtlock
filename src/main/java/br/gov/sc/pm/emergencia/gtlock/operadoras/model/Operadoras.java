@@ -9,7 +9,7 @@ import lombok.Data;
 public class Operadoras {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "operadora")
     private Integer operadora;
 
